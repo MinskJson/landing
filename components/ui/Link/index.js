@@ -1,7 +1,13 @@
 import Link from "next/link";
 import cn from "classnames";
 
-const LinkComponent = ({ title, className, children, href }) => (
+const LinkComponent = ({
+  title,
+  className,
+  children,
+  href,
+  color = "#fff"
+}) => (
   <>
     <style global="true" jsx="true">{`
       .link {
@@ -19,12 +25,34 @@ const LinkComponent = ({ title, className, children, href }) => (
         border: 1px solid #000;
         border-radius: 20px;
         padding: 10px 20px;
+
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        height: 42px;
+        box-sizing: border-box;
+      }
+
+      .round-link svg {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
       }
 
       .round-link:hover {
         background: #000;
         color: #fff;
         text-decoration: none;
+      }
+
+      .round-link:hover svg {
+        fill: #fff;
+      }
+
+      @media screen and (max-width: 768px) {
+        .round-link {
+          padding: 10px;
+        }
       }
     `}</style>
     <Link href={href}>

@@ -1,9 +1,17 @@
 import Head from "next/head";
-import Header from "../components/header";
+import {
+  Header,
+  TopSection,
+  AboutSection,
+  EventsSection,
+  PartnersSection,
+  TeamSection,
+  Footer
+} from "components";
 
 export default () => (
   <>
-    <style jsx="true">{`
+    <style global="true" jsx="true">{`
       @import url(https://fonts.googleapis.com/css?family=Pacifico);
 
       html,
@@ -115,6 +123,7 @@ export default () => (
         font-family: Verdana;
         font-size: 14px;
         min-width: 320px;
+        position: relative;
       }
       ol,
       ul {
@@ -124,11 +133,28 @@ export default () => (
         border-collapse: collapse;
         border-spacing: 0;
       }
+      .container {
+        position: relative;
+        overflow: hidden;
+      }
+      .section {
+        padding: 0 2rem;
+        box-sizing: border-box;
+        position: relative;
+      }
     `}</style>
     <Head>
       <title>My page title</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
-    <Header />
+    <div className="container">
+      <Header />
+      <TopSection />
+      <EventsSection />
+      <AboutSection />
+      <TeamSection />
+      <PartnersSection />
+      <Footer />
+    </div>
   </>
 );

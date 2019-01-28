@@ -3,6 +3,7 @@ import cn from "classnames";
 import Link from "../ui/Link";
 import LogotypeComponent from "../ui/Logotype";
 import MenuButton from "../ui/Buttons/Menu";
+import TelegramIcon from "../../svgs/telegram.svg";
 
 class Header extends React.Component {
   state = {
@@ -57,6 +58,7 @@ class Header extends React.Component {
 
           .header-cta .round-link {
             margin-right: 20px;
+            vertical-align: top;
           }
 
           .header-cta .round-link:last-child {
@@ -65,6 +67,21 @@ class Header extends React.Component {
 
           .header-menu {
             display: none;
+          }
+
+          @media screen and (min-width: 1024px) {
+            .header-cta .round-link {
+              color: #fff;
+              border-color: #fff;
+            }
+
+            .header-cta .round-link svg {
+              fill: #fff;
+            }
+
+            .header-cta .round-link:hover {
+              border-color: #000;
+            }
           }
 
           @media screen and (max-width: 1024px) {
@@ -171,6 +188,7 @@ class Header extends React.Component {
               Присоединиться
             </Link>
             <Link href="/" className="round-link" title="Telegram">
+              <TelegramIcon />
               Telegram
             </Link>
           </div>
