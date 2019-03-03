@@ -33,15 +33,15 @@ export default () => (
 
     <section className="section team">
       <Title>Наша команда</Title>
-      <h2>Программный комитет и волонтеры, которые нам помогают</h2>
+      <p className="team-description">Программный комитет и волонтеры, которые нам помогают</p>
       <div className="team-container">
       {team.map((member, index) => (
             <div className="team-member" key={index}>
               <div className="team-image-container">
                 <img src={member.image} alt={member.title} />
-                <h3>{member.title}</h3>
-                <h4>{member.occupation}</h4>
-                {member.description}
+                <p className="member-title">{member.title}</p>
+                <p className="member-occupation">{member.occupation}</p>
+                <p className="member-description">{member.description}</p>
               </div>
             </div>
           ))}
@@ -58,6 +58,7 @@ export default () => (
       .team-container {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
       }
       
@@ -68,7 +69,6 @@ export default () => (
 
       .team-image-container {
         width: 275px;
-        height: 440px;
         display: block;
         padding-top: 20px;
       }
@@ -91,13 +91,18 @@ export default () => (
         filter: grayscale(0%);
       }
 
-      h2 {
+      .team-description {
         text-align: center;
       }
 
-      h3, h4 {
+      .member-title, .member-occupation {
         margin-bottom: 10px;
       }
+
+      .member-description {
+        padding-bottom: 20px;
+      }
+
         
     `}
     </style>
