@@ -2,7 +2,7 @@ import React from "react";
 import cn from "classnames";
 import Link from "../ui/Link";
 import LogotypeComponent from "../ui/Logotype";
-import MenuButton from "../ui/Buttons/Menu";
+// import MenuButton from "../ui/Buttons/Menu";
 import TelegramIcon from "../../svgs/telegram.svg";
 
 class Header extends React.Component {
@@ -19,6 +19,56 @@ class Header extends React.Component {
   render() {
     return (
       <>
+        <header>
+          <nav>
+            <LogotypeComponent />
+            <ul
+              className={cn({
+                open: this.state.isMenuOpen
+              })}
+            >
+              {/* <li>
+                <Link href="/" title="Сообщество">
+                  Сообщество
+                </Link>
+              </li>
+              <li>
+                <Link href="/" title="Подкасты">
+                  Подкасты
+                </Link>
+              </li>
+              <li>
+                <Link href="/" title="Для начинающих в IT">
+                  Для начинающих в IT
+                </Link>
+              </li>
+              <li>
+                <Link href="/" title="Мероприятия и тусовки">
+                  Мероприятия и тусовки
+                </Link>
+              </li> */}
+            </ul>
+            {/* <MenuButton
+              className="header-menu"
+              isActive={this.state.isMenuOpen}
+              onClick={this.toggleMenu}
+            /> */}
+          </nav>
+          <div className="header-cta">
+            {/* <Link href="/" className="round-link" title="Присоединиться">
+              Присоединиться
+            </Link> */}
+            <Link
+              href="https://t.me/minskjson"
+              className="round-link"
+              title="Присоединиться в Telegram"
+              target="_blank"
+            >
+              <TelegramIcon />
+              Telegram
+            </Link>
+          </div>
+        </header>
         <style jsx="true">{`
           header {
             display: flex;
@@ -86,7 +136,6 @@ class Header extends React.Component {
 
           @media screen and (max-width: 1024px) {
             header {
-              flex-direction: column;
               align-items: flex-start;
               margin-top: 0;
               padding-left: 1rem;
@@ -102,7 +151,7 @@ class Header extends React.Component {
             }
 
             .header-cta {
-              text-align: center;
+              text-align: right;
               width: 100%;
             }
           }
@@ -148,51 +197,6 @@ class Header extends React.Component {
             }
           }
         `}</style>
-        <header>
-          <nav>
-            <LogotypeComponent />
-            <ul
-              className={cn({
-                open: this.state.isMenuOpen
-              })}
-            >
-              <li>
-                <Link href="/" title="Сообщество">
-                  Сообщество
-                </Link>
-              </li>
-              <li>
-                <Link href="/" title="Подкасты">
-                  Подкасты
-                </Link>
-              </li>
-              <li>
-                <Link href="/" title="Для начинающих в IT">
-                  Для начинающих в IT
-                </Link>
-              </li>
-              <li>
-                <Link href="/" title="Мероприятия и тусовки">
-                  Мероприятия и тусовки
-                </Link>
-              </li>
-            </ul>
-            <MenuButton
-              className="header-menu"
-              isActive={this.state.isMenuOpen}
-              onClick={this.toggleMenu}
-            />
-          </nav>
-          <div className="header-cta">
-            <Link href="/" className="round-link" title="Присоединиться">
-              Присоединиться
-            </Link>
-            <Link href="/" className="round-link" title="Telegram">
-              <TelegramIcon />
-              Telegram
-            </Link>
-          </div>
-        </header>
       </>
     );
   }

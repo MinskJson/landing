@@ -6,6 +6,7 @@ const LinkComponent = ({
   className,
   children,
   href,
+  target,
   color = "#fff"
 }) => (
   <>
@@ -56,7 +57,7 @@ const LinkComponent = ({
       }
     `}</style>
     <Link href={href}>
-      <a title={title} className={cn("link", className)}>
+      <a title={title} target={target} className={cn("link", className)}>
         {children}
       </a>
     </Link>
