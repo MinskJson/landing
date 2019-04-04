@@ -1,5 +1,7 @@
+import React from "react";
 import Link from "components/ui/Link";
 import Triangle from "components/ui/Triangle";
+import TelegramIcon from "../../../svgs/telegram.svg";
 import Json from "components/ui/Json";
 
 export default () => (
@@ -67,11 +69,16 @@ export default () => (
           передавать JSON
         </h1>
         <div className="page-cta">
-          <Link href="/" className="round-link" title="Telegram">
+          {/* <Link href="/" className="round-link" title="Telegram">
             Шта?
-          </Link>
-          <Link href="/" className="round-link" title="Telegram">
-            Присоединиться
+          </Link> */}
+          <Link
+            href="https://t.me/minskjson"
+            className="round-link"
+            title="Присоединиться в Telegram"
+            target="_blank"
+          >
+            <TelegramIcon /> Присоединиться в Telegram
           </Link>
         </div>
         <div className="page-json">

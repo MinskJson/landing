@@ -150,10 +150,10 @@ export default () => (
     <div className="container">
       <Header />
       <TopSection />
-      <EventsSection />
+      {/* <EventsSection /> */}
       <AboutSection />
       <TeamSection />
-      <PartnersSection />
+      {/* <PartnersSection /> */}
       <Footer />
     </div>
   </>
