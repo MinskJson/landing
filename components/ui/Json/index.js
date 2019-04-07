@@ -9,11 +9,11 @@ export default class Json extends React.Component {
   componentWillMount() {
     const self = this;
 
-    axios
-      .get("http://api.open-notify.org/astros.json")
-      .then(function(response) {
+    // axios
+    //   .get("http://api.open-notify.org/astros.json")
+      new Promise((res) => res()).then(function(response) {
         self.setState({
-          json: response.data
+          json: {"message": "success", "number": 6, "people": [{"craft": "ISS", "name": "Oleg Kononenko"}, {"craft": "ISS", "name": "David Saint-Jacques"}, {"craft": "ISS", "name": "Anne McClain"}, {"craft": "ISS", "name": "Alexey Ovchinin"}, {"craft": "ISS", "name": "Nick Hague"}, {"craft": "ISS", "name": "Christina Koch"}]}
         });
       })
       .catch(function(error) {
