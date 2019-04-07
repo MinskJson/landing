@@ -149,16 +149,16 @@ export default () => (
       <title>Сообщество Minsk JSON</title>
 
       <meta name="description" content="Сообщество любителей  передавать JSON" />
-      <meta name="image" content="/static/preview.png" />
+      <meta name="image" content="https://www.json.community/static/preview.png" />
       <meta itemprop="name" content="Сообщество Minsk JSON" />
       <meta itemprop="description" content="Сообщество любителей  передавать JSON" />
-      <meta itemprop="image" content="/static/preview.png" />
-      <link rel="icon" type="image/png" href="/static/favicon.jpg" />
+      <meta itemprop="image" content="https://www.json.community/static/preview.png" />
+      <link rel="icon" type="image/png" href="https://www.json.community/static/favicon.jpg" />
 
       <meta name="og:title" content="Сообщество Minsk JSON" />
       <meta name="og:description" content="Сообщество любителей  передавать JSON" />
-      <meta name="og:image" content="/static/preview.png" />
-      <meta name="og:url" content="https://json.community" />
+      <meta name="og:image" content="https://www.json.community/static/preview.png" />
+      <meta name="og:url" content="https://www.json.community" />
       <meta name="og:site_name" content="{Minsk} JSON" />
       <meta name="og:locale" content="ru_RU" />
       <meta name="og:video" content="https://www.youtube.com/watch?v=lddJfBbNUn8" />
