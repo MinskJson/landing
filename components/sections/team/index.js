@@ -13,7 +13,7 @@ const team = [
     occupation: "Software Engineer",
     image: "/static/images/gleb.jpg",
     description:
-      "Лалка из минска который пишет js. Пассивный driver frontend комьюнити."
+      "Driver frontend комьюнити."
   },
   {
     title: "Aliaksei Makas",
