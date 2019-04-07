@@ -1,0 +1,21 @@
+{
+  "short_name": "JSON",
+  "name": "{Minsk} JSON",
+  "icons": [
+    {
+      "src": "/images/favicon.jpg",
+      "type": "image/jpeg",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/favicon.jpg",
+      "type": "image/jpeg",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "scope": "/json/",
+  "theme_color": "#FFFFFF"
+}

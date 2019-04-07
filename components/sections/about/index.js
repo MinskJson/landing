@@ -45,6 +45,9 @@ export default () => (
         line-height: 20px;
       }
 
+      .about-content .section-title {
+        margin-top: 40px!important;
+      }
       .about-image {
         max-width: 30%;
         border-radius: 20px;
@@ -59,6 +62,9 @@ export default () => (
           flex-direction: column;
         }
 
+        .triangle {
+          display: none;
+        }
         .about-content {
           margin-bottom: 40px;
         }

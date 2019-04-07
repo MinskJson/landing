@@ -80,6 +80,11 @@ class Header extends React.Component {
 
           header .logotype {
             margin-right: 20px;
+            transition: transform .3s ease-in-out;
+          }
+
+          header .logotype:hover {
+            transform: scale(1.25) rotate(.1rad)
           }
 
           nav {

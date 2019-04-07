@@ -6,6 +6,7 @@ export default ({ children, className }) => (
       .section-title {
         font-size: 2rem;
         font-weight: 700;
+        margin-top: 180px!important;
         margin-bottom: 40px;
         font-family: Pacifico, cursive;
       }

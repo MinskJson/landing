@@ -16,6 +16,7 @@ const LinkComponent = ({
         text-decoration: none;
         cursor: pointer;
         display: inline-block;
+        box-shadow: 0 2px 0 rgba(0,0,0,0.015);
       }
 
       .link:hover {
@@ -41,13 +42,14 @@ const LinkComponent = ({
       }
 
       .round-link:hover {
-        background: #000;
-        color: #fff;
+        background: #FFCC00!important;
+        color: #000!important;
+        border-color: #FFCC00!important;
         text-decoration: none;
       }
 
       .round-link:hover svg {
-        fill: #fff;
+        fill: #000!important;
       }
 
       @media screen and (max-width: 768px) {

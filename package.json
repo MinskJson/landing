@@ -1,4 +1,7 @@
 {
+  "name": "json-landing",
+  "version": "1.0.0",
+  "description": "World best website to manage json",
   "dependencies": {
     "axios": "^0.18.0",
     "babel-plugin-inline-react-svg": "^1.0.1",

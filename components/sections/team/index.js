@@ -60,26 +60,31 @@ export default () => (
         }
 
         .team-container {
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: center;
+          display: grid;
+          max-width: 700px;
+          margin: 120px auto;
+          grid-template-columns: 1fr 1fr;
+          grid-column-gap: 24px;
+          grid-row-gap: 24px;
           margin-top: 70px;
         }
 
         .team-member {
-          margin: 0 10px;
           text-align: center;
+          box-sizing: border-box;
+          border-radius: 5px;
+        }
+
+        .team-member:hover {
+          // box-shadow: 1px 1px 5px #999;
+          box-shadow: 0 0 0 2px #FFCC00, 0 2px 0 rgba(0,0,0,0.015);
         }
 
         .team-image-container {
-          width: 275px;
+          width: 100%;
+          box-sizing: border-box;
           display: block;
           padding: 20px;
-        }
-
-        .team-image-container:hover {
-          box-shadow: 1px 1px 5px #999;
         }
 
         .team img {
@@ -102,11 +107,12 @@ export default () => (
 
         .member-title {
           font-weight: 700;
+          font-size: 18px;
+          margin-bottom: 4px;
         }
 
-        .member-title,
         .member-occupation {
-          margin-bottom: 10px;
+          margin-bottom: 16px;
         }
 
         .member-description {
@@ -117,6 +123,10 @@ export default () => (
         @media screen and (max-width: 768px) {
           .team .section-title {
             margin-top: 40px;
+          }
+
+          .team-container {
+            grid-template-columns: 1fr;
           }
         }
       `}
