@@ -1,6 +1,6 @@
 {
   "name": "json-landing",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "World best website to manage json",
   "dependencies": {
     "axios": "^0.18.0",
